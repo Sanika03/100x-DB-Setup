@@ -7,6 +7,6 @@ const db = require('./models/index');
       } catch (error) {
         console.error('Unable to connect to the database:', error);
       } finally {
-        await db.sequelize.close();
+        await db.sequelize.close();   
       }
 })()
